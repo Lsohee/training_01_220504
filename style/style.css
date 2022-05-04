@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  background-color: antiquewhite;
+  display: flex;
+}
+#container > div {
+  width: 30%;
+  height: inherit;
+}
+#container > div:nth-child(1) {
+  width: 10%;
+  height: inherit;
+  background-color: #ccc;
+}
+#container > div:nth-child(2) {
+  background-color: rgb(204, 102, 204);
+  display: flex;
+  justify-content: center;
+}
+#container > div:nth-child(2) > div {
+  margin: 1em;
+  width: 90%;
+  height: 30%;
+  text-align: justify;
+}
+#container > div:nth-child(3) {
+  background-color: rgb(204, 204, 102);
+}
+#container > div:nth-child(3) > svg:nth-child(1) {
+  position: relative;
+  top: 5rem;
+  left: -5em;
+  width: 40em;
+  z-index: 2;
+  height: 40em;
+}
+#container > div:nth-child(3) > svg:nth-child(2) {
+  position: relative;
+  filter: blur(25px);
+  top: -34em;
+  left: -7em;
+  width: 40em;
+  height: 40em;
+  z-index: 1;
+}
+#container > div:nth-child(3) > div:nth-child(3) {
+  position: relative;
+  top: -90%;
+  margin: 1em;
+  width: 92%;
+  text-align: justify;
+  height: 20em;
+}
+#container > div:nth-child(4) {
+  background-color: rgba(204, 204, 204, 0.4);
+}/*# sourceMappingURL=style.css.map */
